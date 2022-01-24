@@ -1,5 +1,5 @@
 function Pug(){
-    return <div>Esta es la pagina de pug</div>;
+    return <div>Esta es la pagina de puggregregeer</div>;
 }
 
 export default Pug;
