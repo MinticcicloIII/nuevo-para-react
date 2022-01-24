@@ -1,36 +1,16 @@
-import CardRazasPerros from "../components/cardRazasPerros";
-import logo from '../media/mundo.png';
-import '../styles/styles.css';
-import pitbull from '../media/pitbull.jpg';
-import pastor from '../media/Cane_da_pastore_tedesco_adulto.jpg';
-import pug from '../media/pug.jpg';
-import borderCollie from '../media/border-collie-.jpeg';
+import CardRazasPerros from "components/cardRazasPerros";
+import 'styles/styles.css';
+import pitbull from 'media/pitbull.jpg';
+import pastor from 'media/Cane_da_pastore_tedesco_adulto.jpg';
+import pug from 'media/pug.jpg';
+import borderCollie from 'media/border-collie-.jpeg';
+import Layout from "layouts/Layout";
 
 
 function Index(){
     return(
         <div>
-        <body>
-            <header>
-                <ul className="navbar">
-                    <li>
-                        <img src={logo} alt="imagen" className="logo" />
-                    </li>
-                    <li>
-                        <button className="button mainbutton">Nuevo post</button>
-                    </li>
-                    <li><button className="button secondarybutton">Login</button></li>
-                    <li>
-                        <div className="buscar">                 
-                            <input placeholder="buscar una raza" />
-                            <i className="fas fa-search lupa"></i>
-                        </div>
-                        </li>
-                    <li><button className="button mainbutton">Registro</button></li>
-                </ul>
-            </header>
-            <main>
-                <section>
+            <section>
                     <h1>Razas de perros</h1>
                     <ul className="breedCardContainer">
                         <CardRazasPerros nombreRaza="Pitbull" img={pitbull} color="backgroundVerde"/>
@@ -40,12 +20,8 @@ function Index(){
                     </ul>
                 </section>
                 <section></section>
-            </main>
-            <footer>
-            </footer>
-        </body>
         </div>
         )
 }
-
+/*Se puede usar acá el LAyourt pero no es cyhimba importar el Layout en cada pagina mejor en el App */
 export default Index;
