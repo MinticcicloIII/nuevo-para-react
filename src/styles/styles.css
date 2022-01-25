@@ -14,11 +14,13 @@ h1{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 
 .mainContainer > main{
   height: 100%;
+  overflow-y: scroll;
 }
 
 .mainContainer > footer{
@@ -130,7 +132,11 @@ button{
 
 .breedCardContainer{
   display: flex;
+  flex-wrap: wrap;
 }
+/*Este flew wrap bien aspero parce lo amo. Segun el rpofe se utilzia bastantwe*/
+
+
 .breedCard{
   margin: 10px;
   background-color: seagreen;
